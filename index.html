@@ -28,7 +28,7 @@
             margin-top: 50px;
             width: 250px;
         }
-        .home__subtitle{
+        .home_section__subtitle{
             color:#1f2937 ;
             
         }
@@ -79,21 +79,21 @@
             font-size: 24px;
             cursor: pointer;
         }
-            .home__titles {
+            .home_section__titles {
     display: flex; /* or display: grid; */
     align-content: space-between 10px; /* for vertical alignment */
 }
 
-    .home__titles {
+    .home_section__titles {
     flex: 1; /* or use grid-column or grid-row if using grid */
     /* Adjust spacing, margins, etc. as needed */
 }
 
-.home__image {
+.home_section__image {
     /* Adjust spacing, margins, etc. as needed */
     float: right  !important;
 }
-    .home__title{
+    .home_section__title{
             color:#1f2937 ;
         
         }
@@ -104,66 +104,66 @@
     <body>
         <!--=============== HEADER ===============-->
         <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">
+            <navigate class="navigate container">
+                <a href="#" class="navigate__logo">
                     <img src="assets/img/logo.png" alt="">
                 </a>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <ul class="nav__list">
-                            <li class="nav__item">
-                                <a href="#home" class="nav__link active-link">Home</a>
+                <div class="navigate__menu" id="navigate-menu">
+                    <ul class="navigate__list">
+                        <ul class="navigate__list">
+                            <li class="navigate__item">
+                                <a href="#home_section" class="navigate__link active-link">Home</a>
                             </li>
                             
-                            <li class="nav__item">
-                                <a href="#tutorial" class="nav__link">Tutorial</a>
+                            <li class="navigate__item">
+                                <a href="#tutorial" class="navigate__link">Tutorial</a>
                             </li>
-                            <li class="nav__item">
-                                <a href="#run" class="nav__link">Run</a>
+                            <li class="navigate__item">
+                                <a href="#run" class="navigate__link">Run</a>
                             </li>
-                            <li class="nav__item">
-                                <a href="#dictonary" class="nav__link">Dictonary</a>
+                            <li class="navigate__item">
+                                <a href="#dictonary" class="navigate__link">Dictonary</a>
                             </li>
                     </ul>
 
-                    <div class="nav__close" id="nav-close">
+                    <div class="navigate__close" id="navigate-close">
                         <i class="ri-close-line"></i>
                     </div>
                 </div>
 
-                <div class="nav__toggle" id="nav-toggle">
+                <div class="navigate__toggle" id="navigate-toggle">
                     <i class="ri-function-line"></i>
                 </div>
-            </nav>
+            </navigate>
         </header>
 
         <main class="main">
-            <!--=============== HOME ===============-->
-            <section class="home section" id="home">
-                <div class="home__container container grid">
+            <!--=============== home_section ===============-->
+            <section class="home_section section" id="home_section">
+                <div class="home_section__container container grid">
                    
-                    <div class="home__data">
-                        <div class="home__header">
-                            <div class="home__titles">
-                            <!-- <h1 class="home__title">Dark Coder's</h1> -->
-                           <h2 class="home__subtitle">Sign Language Converter</h2>
+                    <div class="home_section__data">
+                        <div class="home_section__header">
+                            <div class="home_section__titles">
+                            <!-- <h1 class="home_section__title">Dark Coder's</h1> -->
+                           <h2 class="home_section__subtitle">Sign Language Converter</h2>
                             
                             </div>
                             <div >
-                                <img src="assets/img/home.png" alt="" class="image">
+                                <img src="assets/img/home_section.png" alt="" class="image">
                             </div>
                             
                         </div>
-                        <div class="home__container container grid">
+                        <div class="home_section__container container grid">
                    
                             
-                        <div class="home__footer">
-                            <p class="home__description"> Instantly translates sign language into text and speech with a camera, enabling seamless communication anywhere.
+                        <div class="home_section__footer">
+                            <p class="home_section__description"> Instantly translates sign language into text and speech with a camera, enabling seamless communication anywhere.
 
                             </p>
                             <a href="#run" class="button button--flex ">
-                                <span class="home__val">
+                                <span class="home_section__val">
                                 Get Started
                                 </span>
                                 
@@ -181,7 +181,7 @@
             <section class="tutor section grid" id="tutorial">
                 <h2 class="section__title section__title-gradient">Tutorial</h2>
                 <center>
-                <p class="home__val1"> Need a hand? Watch our quick tutorial!</p>
+                <p class="home_section__val1"> Need a hand? Watch our quick tutorial!</p>
             </center>
                    <div class="video-container">
                 <video id="myVideo" width="300rem" height="360" controls>
@@ -199,7 +199,7 @@
    
               
                 <a href="#run" class="button">
-                                <span class="home__val">
+                                <span class="home_section__val">
                                 Try Now<br>
                                 </span>
                             </a>
@@ -217,13 +217,13 @@
                 <center>
                 <div class="items__content">
                     <center>
-                        <p class="home__val2"> Alphabets</p>
+                        <p class="home_section__val2"> Alphabets</p>
                     </center>
                     <img src="assets/img/pro1.png" alt="" class="pro">
                 </div>
             </center>
             <center>
-                <p class="home__val2"> Words</p>
+                <p class="home_section__val2"> Words</p>
             </center>
                 <div class="items__container container grid">
                    
@@ -242,7 +242,7 @@
                         <div class="items__content">
                             <img src="assets/img/pro3.png" alt="" class="items__img">
     
-                            <h3 class="items__title">Home</h3>
+                            <h3 class="items__title">home_section</h3>
                             <span class="items__val">ASL</span>
     
                            
