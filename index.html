@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles2.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        
+        <title>Sign Language Converter</title>
+        <style>
+        #myVideo {
+            width: 70%;
+            height: 100%;
+            object-fit: cover; /* Ensure video fills the container */
+            display: block;
+            margin: auto;
+            margin-top: 30px;
+        }
+        .dropdown {
+            margin-top: 50px;
+            width: 250px;
+        }
+        .home__subtitle{
+            color:#1f2937 ;
+            
+        }
+        /* Style for the select element */
+        .dropdown select {
+            appearance: none; /* Remove default styling */
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+            cursor: pointer;
+            background-color: #fff;
+        }
+
+        /* Style for the drop-down arrow */
+        .dropdown select::after {
+            content: '\25BC'; /* Unicode character for down arrow */
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            pointer-events: none; /* Allow click-through on the arrow */
+        }
+        .window{
+            background-color: white;
+            box-shadow: 5px 10px 20px 0px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        /* Style for drop-down options */
+        .dropdown select option {
+            font-size: 16px;
+        }
+            
+        #playButton {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50px;
+            height: 50px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            border-radius: 50%;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+        }
+            .home__titles {
+    display: flex; /* or display: grid; */
+    align-content: space-between 10px; /* for vertical alignment */
+}
+
+    .home__titles {
+    flex: 1; /* or use grid-column or grid-row if using grid */
+    /* Adjust spacing, margins, etc. as needed */
+}
+
+.home__image {
+    /* Adjust spacing, margins, etc. as needed */
+    float: right  !important;
+}
+    .home__title{
+            color:#1f2937 ;
+        
+        }
+               
+
+        </style>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <img src="assets/img/logo.png" alt="">
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#home" class="nav__link active-link">Home</a>
+                            </li>
+                            
+                            <li class="nav__item">
+                                <a href="#tutorial" class="nav__link">Tutorial</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#run" class="nav__link">Run</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#dictonary" class="nav__link">Dictonary</a>
+                            </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-function-line"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--=============== HOME ===============-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                   
+                    <div class="home__data">
+                        <div class="home__header">
+                            <div class="home__titles">
+                            <!-- <h1 class="home__title">Dark Coder's</h1> -->
+                           <h2 class="home__subtitle">Sign Language Converter</h2>
+                            
+                            </div>
+                            <div >
+                                <img src="assets/img/home.png" alt="" class="image">
+                            </div>
+                            
+                        </div>
+                        <div class="home__container container grid">
+                   
+                            
+                        <div class="home__footer">
+                            <p class="home__description"> Instantly translates sign language into text and speech with a camera, enabling seamless communication anywhere.
+
+                            </p>
+                            <a href="#run" class="button button--flex ">
+                                <span class="home__val">
+                                Get Started
+                                </span>
+                                
+                            </a>
+                            <br>
+                  
+                        </div>
+                    
+                </div>
+            </section>
+            
+           
+
+            <!--=============== tutor ===============-->
+            <section class="tutor section grid" id="tutorial">
+                <h2 class="section__title section__title-gradient">Tutorial</h2>
+                <center>
+                <p class="home__val1"> Need a hand? Watch our quick tutorial!</p>
+            </center>
+                   <div class="video-container">
+                <video id="myVideo" width="300rem" height="360" controls>
+                    <source src="video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+               
+            </section>
+
+           
+
+            
+            <section class="runn section grid" id="run">
+                <h2 class="section__title section__title-gradient">Run</h2>
+   
+              
+                <a href="#run" class="button">
+                                <span class="home__val">
+                                Try Now<br>
+                                </span>
+                            </a>
+                    </div>
+                    
+                  
+                
+            </section>
+
+            <!--=============== items ===============-->
+            <section class="items section" id="dictonary">
+                <h2 class="section__title section__title-gradient items__line">
+                    Refer <br> Your Talk
+                </h2>
+                <center>
+                <div class="items__content">
+                    <center>
+                        <p class="home__val2"> Alphabets</p>
+                    </center>
+                    <img src="assets/img/pro1.png" alt="" class="pro">
+                </div>
+            </center>
+            <center>
+                <p class="home__val2"> Words</p>
+            </center>
+                <div class="items__container container grid">
+                   
+                  
+                    <article class="items__card">
+                        <div class="items__content">
+                            <img src="assets/img/pro2.png" alt="" class="items__img">
+    
+                            <h3 class="items__title">Again</h3>
+                            <span class="items__val">ASL</span>
+    
+                            
+                        </div>
+                    </article>
+                    <article class="items__card">
+                        <div class="items__content">
+                            <img src="assets/img/pro3.png" alt="" class="items__img">
+    
+                            <h3 class="items__title">Home</h3>
+                            <span class="items__val">ASL</span>
+    
+                           
+                        </div>
+                    </article>
+                    <article class="items__card">
+                        <div class="items__content">
+                            <img src="assets/img/pro4.png" alt="" class="items__img">
+    
+                            <h3 class="items__title">Pray</h3>
+                            <span class="items__val">ASL</span>
+    
+                          
+                        </div>
+                    </article>
+
+                    <article class="items__card">
+                        <div class="items__content">
+                            <img src="assets/img/pro5.png" alt="" class="items__img">
+    
+                            <h3 class="items__title">No</h3>
+                            <span class="items__val">ASL</span>
+     
+                        </div>
+                    </article>
+                    <article class="items__card">
+                        <div class="items__content">
+                            <img src="assets/img/p1.png" alt="" class="items__img">
+    
+                            <h3 class="items__title">Hungry</h3>
+                            <span class="items__val">ASL</span>
+     
+                        </div>
+                    </article>
+                    <article class="items__card">
+                        <div class="items__content">
+                            <img src="assets/img/p2.png" alt="" class="items__img">
+    
+                            <h3 class="items__title">Family</h3>
+                            <span class="items__val">ASL</span>
+     
+                        </div>
+                    </article>
+                    <article class="items__card">
+                        <div class="items__content">
+                            <img src="assets/img/p3.jpeg" alt="" class="items__img">
+    
+                            <h3 class="items__title">Help</h3>
+                            <span class="items__val">ASL</span>
+     
+                        </div>
+                    </article>
+                    <article class="items__card">
+                        <div class="items__content">
+                            <img src="assets/img/p4.jpeg" alt="" class="items__img">
+    
+                            <h3 class="items__title">Time</h3>
+                            <span class="items__val">ASL</span>
+     
+                        </div>
+                    </article>
+                    <article class="items__card">
+                        <div class="items__content">
+                            <img src="assets/img/p5.jpeg" alt="" class="items__img">
+    
+                            <h3 class="items__title"> Car</h3>
+                            <span class="items__val">ASL</span>
+     
+                        </div>
+                    </article>
+                    <article class="items__card">
+                        <div class="items__content">
+                            <img src="assets/img/p6.jpeg" alt="" class="items__img">
+    
+                            <h3 class="items__title">Yes</h3>
+                            <span class="items__val">ASL</span>
+     
+                        </div>
+                    </article>
+                    <article class="items__card">
+                        <div class="items__content">
+                            <img src="assets/img/p7.png" alt="" class="items__img">
+    
+                            <h3 class="items__title">Hello</h3>
+                            <span class="items__val">ASL</span>
+     
+                        </div>
+                    </article>
+                    <article class="items__card">
+                        <div class="items__content">
+                            <img src="assets/img/p8.jpg" alt="" class="items__img">
+    
+                            <h3 class="items__title">Money</h3>
+                            <span class="items__val">ASL</span>
+     
+                        </div>
+                    </article>  
+                    <article class="items__card">
+                        <div class="items__content">
+                            <img src="assets/img/p11.png" alt="" class="items__img">
+    
+                            <h3 class="items__title">I love you</h3>
+                            <span class="items__val">ASL</span>
+     
+                        </div>  
+                    </article>   
+                    <article class="items__card">
+                        <div class="items__content">
+                            <img src="assets/img/p12.png" alt="" class="items__img">
+    
+                            <h3 class="items__title">Water</h3>
+                            <span class="items__val">ASL</span>
+     
+                        </div>  
+                    </article>   
+                    <article class="items__card">
+                        <div class="items__content">
+                            <img src="assets/img/p13.jpeg" alt="" class="items__img">
+    
+                            <h3 class="items__title">Sorry</h3>
+                            <span class="items__val">ASL</span>
+     
+                        </div>
+                    </article>              
+
+
+
+                </div>
+
+            </section>
+            
+            
+        </main>
+
+        <!--=============== FOOTER ===============-->
+        
+
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-s-line scrollup__icon"></i>
+        </a>
+        
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script>
+            $(document).ready(function() {
+                $('#updateBtn').click(function() {
+                    $.ajax({
+                        type: 'POST',
+                        url: '/update',
+                        success: function(response) {
+                            $('#description').text(response.description);
+                        },
+                        error: function(error) {
+                            console.log(error);
+                        }
+                    });
+                });
+            });
+            
+        </script>
+        
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="jquery.flipster.min.js"></script>
+
+    <script>
+        $('.carousel').flipster({
+            style:'carousel',
+            spacing: -0.3,
+
+        });
+    </script>
+    </body>
+</html>
